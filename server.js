@@ -10,6 +10,7 @@ const app = create({
     resave: false,
     saveUninitialized: false,
     cookie: { secure: true },
+    proxy: true,
   },
   users: [
     {
