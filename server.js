@@ -5,6 +5,12 @@ const app = create({
     destination: process.env.SAML_DESTINATION,
     forceAuthentication: true,
   },
+  session: {
+    secret: 'none',
+    resave: false,
+    saveUninitialized: false,
+    cookie: { secure: true },
+  },
   users: [
     {
       id: 'test1',
