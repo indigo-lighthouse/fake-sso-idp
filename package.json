@@ -4,6 +4,7 @@
   "description": "Fake idp endpoint for testing",
   "main": "lib/idp.js",
   "scripts": {
+    "start": "node server.js",
     "test": "eslint lib/**/*.js test/**/*.js && mocha test/**/*.js",
     "patch-release": "npm version patch && npm publish && git push origin master --follow-tags",
     "minor-release": "npm version minor && npm publish && git push origin master --follow-tags",
